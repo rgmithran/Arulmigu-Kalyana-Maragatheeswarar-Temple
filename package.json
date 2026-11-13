@@ -32,5 +32,18 @@
     "oxlint": "^1.90.0",
     "tailwindcss": "^4.3.5",
     "vite": "^8.3.6"
-  }
+  },
+  "description": "Official production-ready, full-stack responsive web application for the historic Chola-era temple: **Arulmigu Kalyana Maragatheeswarar Temple**, situated in Munnur – Molapalayam, Tamil Nadu.",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgmithran/Arulmigu-Kalyana-Maragatheeswarar-Temple.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rgmithran/Arulmigu-Kalyana-Maragatheeswarar-Temple/issues"
+  },
+  "homepage": "https://github.com/rgmithran/Arulmigu-Kalyana-Maragatheeswarar-Temple#readme"
 }

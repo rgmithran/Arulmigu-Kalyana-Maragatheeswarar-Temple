@@ -4,7 +4,9 @@ const connectDB = async () => {
   const uri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/temple_db';
 
   try {
-    const conn = await mongoose.connect(uri);
+    const uriDatabase = decodeURIComponent(new URL(uri).pathname.replace(/^\/+/, ''));
+    const dbName = uriDatabase || process.env.MONGODB_DATABASE || 'temple_db';
+    const conn = await mongoose.connect(uri, { dbName });
     console.log(`[MongoDB] Connected successfully to host: ${conn.connection.host}, database: ${conn.connection.name}`);
     return conn;
   } catch (error) {
